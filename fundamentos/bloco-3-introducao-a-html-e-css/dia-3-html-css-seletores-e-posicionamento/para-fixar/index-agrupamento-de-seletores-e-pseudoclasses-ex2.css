@@ -1,21 +1,60 @@
-h1, p{
+div:hover{
 
-    text-align: center;
-
-}
-
-li{
-
-    list-style: none;
-}
-
-li:hover{
-
-    background-color: aquamarine;
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
 
 }
 
-li:active{
+div:nth-last-of-type(5){
+
+    color: blue;
+    background-color: aqua;
+
+}
+
+div:nth-last-of-type(4){
+
+    color: orange;
+    background-color: bisque;
+
+}
+
+div:nth-last-of-type(3){
+
+    color: purple;
+    font-size: 25px;
+    background-color: rgb(224, 148, 224);
+
+}
+
+div:nth-last-of-type(2){
+
+    color: brown;
+    background-color: rgb(207, 126, 126);
+
+}
+
+div:nth-last-of-type(1){
+
+    color: aqua;
+    background-color: rgb(84, 151, 151);
+
+}
+
+div:nth-last-of-type(5) > h3{
+
+    font-style: italic;
+
+}
+
+div:nth-last-of-type(3) > h3{
+
+    font-style: italic;
+
+}
+
+div:nth-last-of-type(1) > h3{
 
     font-style: italic;
 
