@@ -21,5 +21,11 @@ console.log(document.getElementById("pai").firstChild.nextSibling.nextSibling.ne
 let irmao = document.createElement("section");
 document.getElementById("pai").appendChild(irmao);
 /*2-Crie um filho para elementoOndeVoceEsta.*/
+let filho = document.createElement("section");
+document.getElementById("elementoOndeVoceEsta").appendChild(filho);
 /*3-Crie um filho para primeiroFilhoDoFilho.*/
+let filhoDoFilho = document.createElement("section");
+document.getElementById("primeiroFilhoDoFilho").appendChild(filhoDoFilho);
 /*4-A partir desse filho criado, acesse terceiroFilho.*/
+filho.id = "filhoDoFilho";
+console.log(document.getElementById("filhoDoFilho").parentNode.nextSibling.nextSibling);
