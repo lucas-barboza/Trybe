@@ -1,3 +1,4 @@
+/*PARTE 1*/
 /*1-Acesse o elemento elementoOndeVoceEsta .*/
 console.log(document.getElementById("elementoOndeVoceEsta"));
 /*2-Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.*/
@@ -14,3 +15,11 @@ console.log(document.getElementById("elementoOndeVoceEsta").nextSibling);
 console.log(document.getElementById("elementoOndeVoceEsta").nextSibling.nextSibling);
 /*9-Agora acesse o terceiroFilho a partir de pai .*/
 console.log(document.getElementById("pai").firstChild.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling);
+
+/*PARTE 2*/
+/*1-Crie um irmão para elementoOndeVoceEsta.*/
+let irmao = document.createElement("section");
+document.getElementById("pai").appendChild(irmao);
+/*2-Crie um filho para elementoOndeVoceEsta.*/
+/*3-Crie um filho para primeiroFilhoDoFilho.*/
+/*4-A partir desse filho criado, acesse terceiroFilho.*/
