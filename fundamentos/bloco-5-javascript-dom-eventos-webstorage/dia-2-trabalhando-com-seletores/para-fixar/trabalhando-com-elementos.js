@@ -29,3 +29,10 @@ document.getElementById("primeiroFilhoDoFilho").appendChild(filhoDoFilho);
 /*4-A partir desse filho criado, acesse terceiroFilho.*/
 filho.id = "filhoDoFilho";
 console.log(document.getElementById("filhoDoFilho").parentNode.nextSibling.nextSibling);
+
+/*PARTE 3*/
+/*Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.*/
+document.getElementById("pai").removeChild(document.getElementById("primeiroFilho"));
+document.getElementById("elementoOndeVoceEsta").removeChild(document.getElementById("segundoEUltimoFilhoDoFilho"));
+document.getElementById("pai").removeChild(document.getElementById("terceiroFilho"));
+document.getElementById("pai").removeChild(document.getElementById("quartoEUltimoFilho"));
