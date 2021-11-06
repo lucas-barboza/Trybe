@@ -49,8 +49,8 @@ const getValueByNUmber = (objeto, posicao) => {
 }
 
 //8-Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. Exemplo:
-const verifyParValue = (object, key, value) => {
-  const valores = Object.entries(object);
+const verifyParValue = (objeto, key, value) => {
+  const valores = Object.entries(objeto);
   for (let i in valores) {
     if (valores[i][0] === key && valores[i][1] === value) {
       resultado = true;
